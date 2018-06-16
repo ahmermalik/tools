@@ -1,3 +1,7 @@
+/**Script Written by Ahmer Malik 6.14.2018 **/
+const axios = require('axios');
+var prompt = require('prompt-promise'); // for accepting user input - promise based
+
 
 function getMarketData() {
 
@@ -11,9 +15,11 @@ let getUserInputs = new Promise (
 
             .then(function(value){
                 coin.push(value);
+                console.log(coin);
+                prompt.finish();
+
             })
             .catch(function(error) {
-                prompt.finish();
                 reject(error);
             });
     }
