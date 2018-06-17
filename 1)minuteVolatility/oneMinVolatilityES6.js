@@ -1,6 +1,6 @@
 /**Script Written by Ahmer Malik 1.14.2018 **/
 
-var axios = require('axios');
+const axios = require('axios');
 
 
 
@@ -8,16 +8,16 @@ var axios = require('axios');
 
 var coinBegMinuteData= [];
 var coinEndMinuteData= [];
-var begFormatted =[];
-var endFormatted =[];
-var globalCleanPercent =[];
-var coinPriceChange=[];
-var globalPriceChange=[];
+const begFormatted =[];
+const endFormatted =[];
+const globalCleanPercent =[];
+const coinPriceChange=[];
+const globalPriceChange=[];
 
 //this is a call back function exercise utilizing API,
 function getMarketData() {
-var response = 'https://min-api.cryptocompare.com/data/histominute?fsym=NANO&tsym=USD&limit=1';
-var config = {
+const response = 'https://min-api.cryptocompare.com/data/histominute?fsym=NANO&tsym=USD&limit=1';
+const config = {
     params: {
 
     }
