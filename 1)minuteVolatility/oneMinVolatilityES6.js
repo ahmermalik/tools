@@ -6,18 +6,18 @@ const axios = require('axios');
 
 
 
-var coinBegMinuteData= [];
-var coinEndMinuteData= [];
-const begFormatted =[];
-const endFormatted =[];
-const globalCleanPercent =[];
-const coinPriceChange=[];
-const globalPriceChange=[];
+let coinBegMinuteData= [];
+let coinEndMinuteData= [];
+let begFormatted =[];
+let endFormatted =[];
+let globalCleanPercent =[];
+let coinPriceChange=[];
+let globalPriceChange=[];
 
 //this is a call back function exercise utilizing API,
 function getMarketData() {
-const response = 'https://min-api.cryptocompare.com/data/histominute?fsym=BTC&tsym=USD&limit=1';
-const config = {
+let response = 'https://min-api.cryptocompare.com/data/histominute?fsym=BTC&tsym=USD&limit=1';
+let config = {
     params: {
 
     }
@@ -32,7 +32,7 @@ axios.get(response, config)
         // console.log(results[0]);             //clogs the 1st value of the data key pair.
         coinBegMinuteData.push(results[0].time); //pushes beginning time.
         coinEndMinuteData.push(results[1].time); //pushes ending time.
-        var coinPriceChange = (results[1].open - results[0].open).toFixed(2);    //formula for price change
+        let coinPriceChange = (results[1].open - results[0].open).toFixed(2);    //formula for price change
         globalPriceChange.push(coinPriceChange);
 
         begFormattedDate();
@@ -46,22 +46,22 @@ axios.get(response, config)
     .then(function (reponse){
         endFormattedDate();
         console.log("Ending time is "+endFormatted+ ", while the price was $" +results[1].open);
-        console.log('>'); 
+        console.log('>');
 
     })
     //ending price data with percent change
     .then(function(response){
 
-        var percentChange = (((results[1].open/results[0].open)-1)*100).toFixed(4);
+        let percentChange = (((results[1].open/results[0].open)-1)*100).toFixed(4);
         globalCleanPercent.push(percentChange);
-     
+
         if (percentChange < 0) {
             console.log('Bitcoin price dropped by ' +globalCleanPercent+'%');
-            console.log('>'); 
+            console.log('>');
 
             priceDown();
             return
-            
+
         }
         else
             console.log('Bitcoin price went up by ' +globalCleanPercent+'%');
@@ -85,16 +85,16 @@ getMarketData();
 // Time Converter Functions
 function begFormattedDate() {
 
-    var date = new Date(coinBegMinuteData*1000);
+    const date = new Date(coinBegMinuteData*1000);
     // Hours part from the timestamp
-    var hours = date.getHours();
+    const hours = date.getHours();
     // Minutes part from the timestamp
-    var minutes = "0" + date.getMinutes();
+    const minutes = "0" + date.getMinutes();
     // Seconds part from the timestamp
-    var seconds = "0" + date.getSeconds();
+    const seconds = "0" + date.getSeconds();
 
     // Will display time in 10:30:23 format
-    var formattedTime = hours + ':' + minutes.substr(-2) + ':' + seconds.substr(-2);
+    const formattedTime = hours + ':' + minutes.substr(-2) + ':' + seconds.substr(-2);
 
     begFormatted.push(formattedTime);
 }
@@ -102,16 +102,16 @@ function begFormattedDate() {
 
 function endFormattedDate() {
 
-    var date = new Date(coinEndMinuteData*1000);
+    const date = new Date(coinEndMinuteData*1000);
     // Hours part from the timestamp
-    var hours = date.getHours();
+    const hours = date.getHours();
     // Minutes part from the timestamp
-    var minutes = "0" + date.getMinutes();
+    const minutes = "0" + date.getMinutes();
     // Seconds part from the timestamp
-    var seconds = "0" + date.getSeconds();
+    const seconds = "0" + date.getSeconds();
 
     // Will display time in 10:30:23 format
-    var formattedTime = hours + ':' + minutes.substr(-2) + ':' + seconds.substr(-2);
+    const formattedTime = hours + ':' + minutes.substr(-2) + ':' + seconds.substr(-2);
 
     endFormatted.push(formattedTime);
 }
