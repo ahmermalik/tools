@@ -17,7 +17,7 @@ let getUserInputs = new Promise (
 
             .then(function(value){
                 rawCoin.push(value);
-                console.log(rawCoin);
+                // console.log(rawCoin);
                 getMarketData();
                 // prompt.finish();
 
@@ -38,12 +38,13 @@ let getUserInputs = new Promise (
 Main();
 
 function getMarketData() {
-    let coin =[];
 
-    for (let i = 0; i < rawCoin.length; i++) {
-        rawCoin[i] = rawCoin[i].toUpperCase(coin.push(i));
+
+    let coin =[];
+    console.log(rawCoin +" here we go");
+    for i in rawCoin i.toUpperCase();
+    coin.push(i);
     console.log(coin);
-    }
 
 
 
