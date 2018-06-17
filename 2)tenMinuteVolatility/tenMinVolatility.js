@@ -4,43 +4,65 @@ const axios = require('axios');
 var prompt = require('prompt-promise'); // for accepting user input - promise based
 
 
-function getMarketData() {
+let rawData =[];
+let rawCoin =[];
 
+function Main() {
 
 
 let getUserInputs = new Promise (
     function (resolve, reject) {
-        let coin =[];
 
         prompt('What coin do you want to analyze: ')
 
             .then(function(value){
-                coin.push(value);
-                console.log(coin);
+                rawCoin.push(value);
+                console.log(rawCoin);
+                getMarketData();
+                // prompt.finish();
 
 
             })
 
             .then(function(value){
+                console.log("the end");
                 prompt.finish();
 
             })
             .catch(function(error) {
                 reject(error);
             });
-    }
-);
+});
 
 };
+Main();
 
-getMarketData();
+function getMarketData() {
+    let coin =[];
+
+    for (let i = 0; i < rawCoin.length; i++) {
+        rawCoin[i] = rawCoin[i].toUpperCase(coin.push(i));
+    console.log(coin);
+    }
 
 
-// var main = function (){
-//     getUserInputs
-//         .then(function(inputs){
-//             var coinName =
-//         })
-// }
 
-// main()
+    const response = 'https://min-api.cryptocompare.com/data/histominute?fsym='+coin+'&tsym=USD&limit=1';
+    const config = {
+        params: {}
+    };
+
+    axios.get(response, config)
+        .then(function (response) {
+           // *** console.log(response.data);           //clogs the entire response for the api.
+            // console.log(response.data['Data']);   //clogs all of the data response in json.
+           // *** results = response.data['Data'];      //assigns only the "Data" portion of the json response to results variable.
+
+            // prompt.finish();
+
+        });
+};
+
+
+
+

@@ -41,7 +41,7 @@ axios.get(response, config)
         console.log('--------------------');
         console.log("Beginning time is "+begFormatted+ ", while the price was $" +results[0].open);
         console.log('>');
-    })
+    });
     //beginning price data
     .then(function (reponse){
         endFormattedDate();
