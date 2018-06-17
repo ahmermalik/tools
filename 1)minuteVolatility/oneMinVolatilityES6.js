@@ -16,7 +16,7 @@ const globalPriceChange=[];
 
 //this is a call back function exercise utilizing API,
 function getMarketData() {
-const response = 'https://min-api.cryptocompare.com/data/histominute?fsym=NANO&tsym=USD&limit=1';
+const response = 'https://min-api.cryptocompare.com/data/histominute?fsym=BTC&tsym=USD&limit=1';
 const config = {
     params: {
 
