@@ -29,8 +29,8 @@
       <file leaf-file-name="tenMinVolatility.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/2)tenMinuteVolatility/tenMinVolatility.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="63" column="94" lean-forward="true" selection-start-line="63" selection-start-column="94" selection-end-line="63" selection-end-column="94" />
+            <state relative-caret-position="510">
+              <caret line="72" column="0" lean-forward="true" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
               <folding>
                 <marker date="1529288263303" expanded="true" signature="218:826" ph="{...}" />
                 <marker date="1529288263303" expanded="true" signature="286:821" ph="{...}" />
@@ -212,12 +212,12 @@
       <option name="presentableId" value="Default" />
       <updated>1529187220938</updated>
       <workItem from="1529187222228" duration="10313000" />
-      <workItem from="1529285518184" duration="2467000" />
+      <workItem from="1529285518184" duration="2590000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12780000" />
+    <option name="totallyTimeSpent" value="12903000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-483" y="-978" width="1650" height="965" extended-state="0" />
@@ -290,8 +290,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/2)tenMinuteVolatility/tenMinVolatility.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="63" column="94" lean-forward="true" selection-start-line="63" selection-start-column="94" selection-end-line="63" selection-end-column="94" />
+        <state relative-caret-position="510">
+          <caret line="72" column="0" lean-forward="true" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
           <folding>
             <marker date="1529288263303" expanded="true" signature="218:826" ph="{...}" />
             <marker date="1529288263303" expanded="true" signature="286:821" ph="{...}" />
