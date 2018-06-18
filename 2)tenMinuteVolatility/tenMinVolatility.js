@@ -18,14 +18,15 @@ let getUserInputs = new Promise (
             .then(function(value){
                 rawCoin.push(value);
                 console.log(rawCoin);
-                getMarketData();
+                upperCase()
+                // getMarketData();
                 // prompt.finish();
 
 
             })
 
             .then(function(value){
-                console.log("the end");
+                console.log("we're pausing now");
                 prompt.finish();
 
             })
@@ -38,21 +39,20 @@ let getUserInputs = new Promise (
 };
 Main();
 
-function getMarketData() {
-
+function upperCase() {
     console.log(rawCoin +" here we go");
-    let coin =[];
 
-    for (var i = 0, len = rawCoin.length; i < len; i++) {
-        var rawCoin = [i].toUpperCase();
-        console.log(coin);
+    var rawCoinStringify = rawCoin.toString();
+    var coin = rawCoinStringify.toUpperCase();
+    // rawCoin.push(coin);
+    console.log("this is the derp coin " +coin);
+    getMarketData()
 
-    }
+};
 
 
-
-
-    const response = 'https://min-api.cryptocompare.com/data/histominute?fsym='+rawCoin+'&tsym=USD&limit=10';
+function getMarketData() {
+    const response = 'https://min-api.cryptocompare.com/data/histominute?fsym='+coin+'&tsym=USD&limit=10';
     const config = {
         params: {}
     };
