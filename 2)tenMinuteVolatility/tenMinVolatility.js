@@ -17,7 +17,7 @@ let getUserInputs = new Promise (
 
             .then(function(value){
                 rawCoin.push(value);
-                // console.log(rawCoin);
+                console.log(rawCoin);
                 getMarketData();
                 // prompt.finish();
 
@@ -40,12 +40,15 @@ Main();
 
 function getMarketData() {
 
+    console.log(rawCoin +" here we go");
+    let coin =[];
 
-    // let coin =[];
-    // console.log(rawCoin +" here we go");
-    // for i in rawCoin i.toUpperCase();
-    // coin.push(i);
-    // console.log(coin);
+    for (var i = 0, len = rawCoin.length; i < len; i++) {
+        var rawCoin = [i].toUpperCase();
+        console.log(coin);
+
+    }
+
 
 
 
@@ -59,7 +62,7 @@ function getMarketData() {
            // console.log(response.data);           //clogs the entire response for the api.
             rawData.push(response.data['Data']);
             // console.log(response.data['Data']);   //clogs all of the data response in json.
-           results = response.data['Data'];      //assigns only the "Data" portion of the json response to results variable.
+            results = response.data['Data'];      //assigns only the "Data" portion of the json response to results variable.
 
             // prompt.finish();
 
