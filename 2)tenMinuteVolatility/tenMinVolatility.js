@@ -18,9 +18,10 @@ let getUserInputs = new Promise (
 
             .then(function(value){
                 rawCoin.push(value);
-                console.log(rawCoin);
                 upperCase();
                 getMarketData();
+                console.log("we're pausing now");
+
                 prompt.finish();
 
 
@@ -28,8 +29,8 @@ let getUserInputs = new Promise (
             })
 
             .then(function(value){
-                console.log("we're pausing now");
-                prompt.finish();
+
+
 
             })
             .catch(function(error) {
@@ -43,11 +44,10 @@ Main();
 
 
 function upperCase() {
-    console.log(rawCoin +" here we go");
-
     var rawCoinStringify = rawCoin.toString();
     var coin = rawCoinStringify.toUpperCase();
     upperCaseCoin.push(coin);
+    console.log(upperCaseCoin +" here we go");
     // getMarketData();
     return
 };
@@ -65,10 +65,18 @@ function getMarketData() {
             rawData.push(response.data['Data']);
             // console.log(response.data['Data']);   //clogs all of the data response in json.
             results = response.data['Data'];      //assigns only the "Data" portion of the json response to results variable.
-            return
+            rawData.push(results);
+            console.log(rawData);
 
-        });
-};
+        })
+        // .then(function(value){
+        //     console.log("Test " +rawData)
+        //     return
+        // })
+
+
+}
+
 
 
 
