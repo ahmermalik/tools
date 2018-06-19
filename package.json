@@ -15,9 +15,12 @@
   "license": "ISC",
   "dependencies": {
     "axios": "^0.18.0",
+    "bootstrap": "^4.1.1",
     "chart.js": "^2.7.2",
+    "jquery": "^3.3.1",
     "pg": "^7.4.0",
     "pg-hstore": "^2.3.2",
+    "popper.js": "^1.14.3",
     "prompt-promise": "^1.0.3",
     "sequelize": "^4.22.5",
     "sequelize-cli": "^3.0.0"
