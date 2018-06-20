@@ -11,22 +11,7 @@ var jsonfile = {
     },{
         "name": "Tom",
         "age": 32
-    },{
-        "name": "Tom",
-        "age": 14
-    },{
-        "name": "Tom",
-        "age": 10
-    },{
-        "name": "Tom",
-        "age": 2
-    },{
-        "name": "Tom",
-        "age": 5
-    },{
-        "name": "Tom",
-        "age": 26
-    },]
+    }]
 };
 
 var labels = jsonfile.jsonarray.map(function(e) {
@@ -152,7 +137,7 @@ var chart = new Chart(ctx, config);
  });
 
 
- // Canvas 1
+ // Pie Chart
  // ===============
 
 
@@ -166,22 +151,7 @@ var chart = new Chart(ctx, config);
      },{
          "name": "Tom",
          "age": 32
-     },{
-         "name": "Tom",
-         "age": 14
-     },{
-         "name": "Tom",
-         "age": 10
-     },{
-         "name": "Tom",
-         "age": 2
-     },{
-         "name": "Tom",
-         "age": 5
-     },{
-         "name": "Tom",
-         "age": 26
-     },]
+     }]
  };
 
  var labels = jsonfile.jsonarray.map(function(e) {
@@ -193,13 +163,72 @@ var chart = new Chart(ctx, config);
 
  var ctx = document.getElementById('myPieChart').getContext('2d');
  var config = {
-     type: 'line',
+     type: 'pie',
+     data: {
+         labels: [
+             'Nano',
+             'Bitcoin',
+             'Ethereum',
+         ],
+         datasets: [{
+             label: 'Graph Line',
+             data: data,
+             backgroundColor: [
+                 'rgba(255, 99, 132, 0.2)',
+                 'rgba(153, 102, 255, 0.2)',
+                 'rgba(54, 162, 235, 0.2)',
+                 'rgba(255, 206, 86, 0.2)',
+                 'rgba(75, 192, 192, 0.2)',
+                 'rgba(255, 159, 64, 0.2)'
+             ]
+         }]
+     }
+ };
+
+ var chart = new Chart(ctx, config);
+
+
+ // Donut Chart
+ // ===============
+
+
+ var jsonfile = {
+     "jsonarray": [{
+         "name": "Bitcoin",
+         "age": 10
+     }, {
+         "name": "Nano",
+         "age": 75
+     },{
+         "name": "Ethereum",
+         "age": 15
+     }]
+ };
+
+ var labels = jsonfile.jsonarray.map(function(e) {
+     return e.name;
+ });
+ var data = jsonfile.jsonarray.map(function(e) {
+     return e.age;
+ });;
+
+ var ctx = document.getElementById('myDonut').getContext('2d');
+ var config = {
+     type: 'doughnut',
      data: {
          labels: labels,
          datasets: [{
              label: 'Graph Line',
              data: data,
-             backgroundColor: 'rgba(0, 119, 204, 0.3)'
+             backgroundColor: [
+                 'rgba(255, 99, 132, 0.2)',
+                 'rgba(255, 206, 86, 0.2)',
+                 'rgba(75, 192, 192, 0.2)',
+                 'rgba(54, 162, 235, 0.2)',
+                 'rgba(153, 102, 255, 0.2)',
+                 'rgba(255, 159, 64, 0.2)'
+             ],
+             borderWidth: 1
          }]
      }
  };

@@ -4,4 +4,9 @@
     style=position: relative;
     height:40vh;
     width:50vw;
+
+}
+
+.chart-title{
+    padding: 12px 0 0px;
 }

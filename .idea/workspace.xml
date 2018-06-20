@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aabe16b1-f387-4225-a73b-b4672cffdaf1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/3)chart/admin.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/3)chart/admin.css" afterPath="$PROJECT_DIR$/3)chart/admin.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/3)chart/admin.js" afterPath="$PROJECT_DIR$/3)chart/admin.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/3)chart/index.html" afterPath="$PROJECT_DIR$/3)chart/index.html" />
     </list>
@@ -19,31 +19,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="admin.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/3)chart/admin.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/3)chart/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="373">
-              <caret line="29" column="10" lean-forward="true" selection-start-line="29" selection-start-column="10" selection-end-line="29" selection-end-column="10" />
+            <state relative-caret-position="148">
+              <caret line="21" column="31" lean-forward="true" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="admin.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="admin.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/3)chart/admin.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="451">
-              <caret line="202" column="11" lean-forward="true" selection-start-line="202" selection-start-column="11" selection-end-line="202" selection-end-column="11" />
+            <state relative-caret-position="376">
+              <caret line="230" column="27" lean-forward="true" selection-start-line="230" selection-start-column="27" selection-end-line="230" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="admin.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/3)chart/admin.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -84,9 +84,9 @@
         <option value="$PROJECT_DIR$/1)minuteVolatility/oneMinVolatilityES6.js" />
         <option value="$PROJECT_DIR$/2)tenMinuteVolatility/tenMinVolatility.js" />
         <option value="$PROJECT_DIR$/3)chart/index.js.html" />
+        <option value="$PROJECT_DIR$/3)chart/admin.js" />
         <option value="$PROJECT_DIR$/3)chart/admin.css" />
         <option value="$PROJECT_DIR$/3)chart/index.html" />
-        <option value="$PROJECT_DIR$/3)chart/admin.js" />
       </list>
     </option>
   </component>
@@ -156,6 +156,11 @@
             <path>
               <item name="19.Sandbox" type="b2602c69:ProjectViewProjectNode" />
               <item name="19.Sandbox" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="19.Sandbox" type="b2602c69:ProjectViewProjectNode" />
+              <item name="19.Sandbox" type="462c0819:PsiDirectoryNode" />
+              <item name="1)minuteVolatility" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="19.Sandbox" type="b2602c69:ProjectViewProjectNode" />
@@ -232,12 +237,12 @@
       <option name="presentableId" value="Default" />
       <updated>1529187220938</updated>
       <workItem from="1529187222228" duration="10313000" />
-      <workItem from="1529285518184" duration="13530000" />
+      <workItem from="1529285518184" duration="14877000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23843000" />
+    <option name="totallyTimeSpent" value="25190000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-434" y="-1009" width="1650" height="965" extended-state="0" />
@@ -329,26 +334,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/3)chart/admin.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/3)chart/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="373">
-          <caret line="29" column="10" lean-forward="true" selection-start-line="29" selection-start-column="10" selection-end-line="29" selection-end-column="10" />
+        <state relative-caret-position="148">
+          <caret line="21" column="31" lean-forward="true" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/3)chart/admin.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="451">
-          <caret line="202" column="11" lean-forward="true" selection-start-line="202" selection-start-column="11" selection-end-line="202" selection-end-column="11" />
+        <state relative-caret-position="376">
+          <caret line="230" column="27" lean-forward="true" selection-start-line="230" selection-start-column="27" selection-end-line="230" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/3)chart/admin.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
           <folding />
         </state>
       </provider>
