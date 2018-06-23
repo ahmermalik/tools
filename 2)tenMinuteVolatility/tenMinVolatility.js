@@ -3,80 +3,44 @@
 const axios = require('axios');
 var prompt = require('prompt-promise'); // for accepting user input - promise based
 
-
-let rawData =[];
-let rawCoin =[];
-let upperCaseCoin = [];
-
 function Main() {
+    let getUserInputs = new Promise((resolve, reject) => {
+            prompt('What coin do you want to analyze: ')
+                .then((coin) => {
+                    prompt.finish();
 
-
-let getUserInputs = new Promise (
-    function (resolve, reject) {
-
-        prompt('What coin do you want to analyze: ')
-
-            .then(function(value){
-                rawCoin.push(value);
-                upperCase();
-                getMarketData();
-                console.log("we're pausing now");
-
-                prompt.finish();
-
-
-
-            })
-
-            .then(function(value){
-
-
-
-            })
-            .catch(function(error) {
-                reject(error);
-                prompt.finish();
-            });
-});
-
-};
-Main();
-
-
-function upperCase() {
-    var rawCoinStringify = rawCoin.toString();
-    var coin = rawCoinStringify.toUpperCase();
-    upperCaseCoin.push(coin);
-    console.log(upperCaseCoin +" here we go");
-    // getMarketData();
-    return
+                    return getMarketData(coin);     //you send the function to get json data.
+                })
+                .then((marketData) => {             //you are resolving the promise 'getMarketData', by giving it the 'marketData' which was returned. the naming convention doesn't matter when you're passing data/arguments through a function.
+                    console.log(marketData);
+                })
+                .catch(function (error) {
+                    reject(error);
+                    prompt.finish();
+                });
+        });
 };
 
+/**
+ * Get market data for a specific coin
+ * @param upperCaseCoin {String}
+ * @param limit {int} Time frame
+ * @return {Promise} // TODO: describe this
+ */
+function getMarketData(coin, limit = -1) {
+    return new Promise((resolve, reject) => {
+        const url = `https://min-api.cryptocompare.com/data/histominute?fsym=${coin.toUpperCase()}&tsym=USD&limit=${limit}`;
+        const config = {
+            params: {}
+        };
 
-function getMarketData() {
-    const response = 'https://min-api.cryptocompare.com/data/histominute?fsym='+upperCaseCoin+'&tsym=USD&limit=1';
-    const config = {
-        params: {}
-    };
+        axios.get(url, config)
+            .then(function (response) {
+                resolve(response.data['Data']);     // resolve = function passed in as the next ".then(resolve{...})"
 
-    axios.get(response, config)
-        .then(function (response) {
-           // console.log(response.data);           //clogs the entire response for the api.
-            rawData.push(response.data['Data']);
-            // console.log(response.data['Data']);   //clogs all of the data response in json.
-            results = response.data['Data'];      //assigns only the "Data" portion of the json response to results variable.
-            rawData.push(results);
-            console.log(rawData);
-
-        })
-        // .then(function(value){
-        //     console.log("Test " +rawData)
-        //     return
-        // })
-
-
+            })
+            .catch(reject);
+    });
 }
 
-
-
-
+Main();
