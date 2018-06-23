@@ -32,5 +32,8 @@
   "bugs": {
     "url": "https://github.com/ahmermalik/tools/issues"
   },
-  "homepage": "https://github.com/ahmermalik/tools#readme"
+  "homepage": "https://github.com/ahmermalik/tools#readme",
+  "devDependencies": {
+    "tracer": "^0.9.0"
+  }
 }
