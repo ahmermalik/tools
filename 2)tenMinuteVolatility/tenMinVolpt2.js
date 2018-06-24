@@ -5,18 +5,25 @@ const console = require('tracer').console();
 var prompt = require('prompt-promise'); // for accepting user input - promise based
 
 function Main() {
+    let coinName;
+
     prompt('What coin do you want to analyze: ')
         .then((coin) => {
             prompt.finish();
 
-            return getMarketData(coin);     //you send the function to get json data.
+            coinName = coin;
+
+            return prompt('What time frame do you want');
+        })
+        .then((limit) => {
+            return getMarketData(coinName, limit);     //you send the function to get json data.
         })
         .then((marketData) => {             //you are resolving the promise 'getMarketData', by giving it the 'marketData' which was returned. the naming convention doesn't matter when you're passing data/arguments through a function.
             console.log(marketData);
         })
         .then((timeFrame) =>{
-        console.log(timeFrame);
-    })
+            console.log(timeFrame);
+        })
         .catch(function (error) {
             console.log(error);
             prompt.finish();
@@ -29,7 +36,7 @@ function Main() {
  * @param limit {int} Time frame
  * @return {Promise} // TODO: describe this
  */
-function getMarketData(coin, limit = 10) {
+function getMarketData(coin, limit) {
     return new Promise((resolve, reject) => {
         const url = `https://min-api.cryptocompare.com/data/histominute?fsym=${coin.toUpperCase()}&tsym=USD&limit=${limit}`;
         const config = {
