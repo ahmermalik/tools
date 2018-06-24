@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aabe16b1-f387-4225-a73b-b4672cffdaf1" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/2)tenMinuteVolatility/tenMinVolpt2.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2)tenMinuteVolatility/tenMinVolatility.js" beforeDir="false" afterPath="$PROJECT_DIR$/2)tenMinuteVolatility/tenMinVolatility.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2)tenMinuteVolatility/tenMinVolpt2.js" beforeDir="false" afterPath="$PROJECT_DIR$/2)tenMinuteVolatility/tenMinVolpt2.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -30,8 +29,8 @@
       <file leaf-file-name="tenMinVolpt2.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/2)tenMinuteVolatility/tenMinVolpt2.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="57" lean-forward="true" selection-start-line="15" selection-start-column="57" selection-end-line="15" selection-end-column="57" />
+            <state relative-caret-position="195">
+              <caret line="13" column="28" lean-forward="true" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -213,18 +212,28 @@
       <workItem from="1529285518184" duration="17464000" />
       <workItem from="1529477099976" duration="2050000" />
       <workItem from="1529779257259" duration="2965000" />
-      <workItem from="1529786626530" duration="4665000" />
+      <workItem from="1529786626530" duration="5711000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37457000" />
+    <option name="totallyTimeSpent" value="38503000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="878" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.17054264" />
-      <window_info anchor="bottom" id="TODO" order="9" />
+      <window_info anchor="bottom" id="TODO" order="9" weight="0.3290653" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="0" side_tool="true" />
       <window_info anchor="bottom" id="Find" order="4" weight="0.3293348" />
@@ -384,8 +393,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/2)tenMinuteVolatility/tenMinVolpt2.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="57" lean-forward="true" selection-start-line="15" selection-start-column="57" selection-end-line="15" selection-end-column="57" />
+        <state relative-caret-position="195">
+          <caret line="13" column="28" lean-forward="true" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
         </state>
       </provider>
     </entry>

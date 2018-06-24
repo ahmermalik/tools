@@ -13,16 +13,13 @@ function Main() {
 
             coinName = coin;
 
-            return prompt('What time frame do you want');
+            return prompt('What time frame do you want: ');
         })
         .then((limit) => {
             return getMarketData(coinName, limit);     //you send the function to get json data.
         })
         .then((marketData) => {             //you are resolving the promise 'getMarketData', by giving it the 'marketData' which was returned. the naming convention doesn't matter when you're passing data/arguments through a function.
-            console.log(marketData);
-        })
-        .then((timeFrame) =>{
-            console.log(timeFrame);
+            console.log(marketData[3]);
         })
         .catch(function (error) {
             console.log(error);
