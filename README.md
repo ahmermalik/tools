@@ -14,7 +14,7 @@ CONTENTS OF THIS FILE
 
 Introduction
 ------------
-The purpose of the project was to display my backend capabilities utilizing several technologies such as the Node.js framework, Promises, ProstgreSQL database. The project was done by Ahmer Malik.
+The purpose of the project was to display my backend capabilities utilizing several technologies such as the Axios, Node.js framework, Promises, ProstgreSQL database. The project was done by Ahmer Malik.
 
 Future Development
 ------------------
