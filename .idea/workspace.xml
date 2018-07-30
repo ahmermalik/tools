@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aabe16b1-f387-4225-a73b-b4672cffdaf1" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/ahmermalik.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -17,26 +15,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="tenMinVolatility.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/2)tenMinuteVolatility/tenMinVolatility.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="630">
-              <caret line="42" column="12" selection-start-line="42" selection-start-column="12" selection-end-line="42" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tenMinVolpt2.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/2)tenMinuteVolatility/tenMinVolpt2.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
-              <caret line="33" column="43" selection-start-line="33" selection-start-column="43" selection-end-line="33" selection-end-column="43" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -103,12 +82,14 @@
   </component>
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths>
+      <path value="$PROJECT_DIR$/gatsbyTut/example-site/package.json" />
+      <path value="$PROJECT_DIR$/gatsbyTut/package.json" />
       <path value="$PROJECT_DIR$/package.json" />
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-125" />
-    <option name="y" value="-882" />
+    <option name="x" value="-167" />
+    <option name="y" value="-998" />
     <option name="width" value="1238" />
     <option name="height" value="795" />
   </component>
@@ -129,17 +110,44 @@
             <path>
               <item name="19.Sandbox" type="b2602c69:ProjectViewProjectNode" />
               <item name="19.Sandbox" type="462c0819:PsiDirectoryNode" />
-              <item name="1)minuteVolatility" type="462c0819:PsiDirectoryNode" />
+              <item name="gatsbyTut" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="19.Sandbox" type="b2602c69:ProjectViewProjectNode" />
               <item name="19.Sandbox" type="462c0819:PsiDirectoryNode" />
-              <item name="2)tenMinuteVolatility" type="462c0819:PsiDirectoryNode" />
+              <item name="gatsbyTut" type="462c0819:PsiDirectoryNode" />
+              <item name="example-site" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="19.Sandbox" type="b2602c69:ProjectViewProjectNode" />
               <item name="19.Sandbox" type="462c0819:PsiDirectoryNode" />
-              <item name="3)chartjs" type="462c0819:PsiDirectoryNode" />
+              <item name="gatsbyTut" type="462c0819:PsiDirectoryNode" />
+              <item name="example-site" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="19.Sandbox" type="b2602c69:ProjectViewProjectNode" />
+              <item name="19.Sandbox" type="462c0819:PsiDirectoryNode" />
+              <item name="gatsbyTut" type="462c0819:PsiDirectoryNode" />
+              <item name="example-site" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="19.Sandbox" type="b2602c69:ProjectViewProjectNode" />
+              <item name="19.Sandbox" type="462c0819:PsiDirectoryNode" />
+              <item name="gatsbyTut" type="462c0819:PsiDirectoryNode" />
+              <item name="example-site" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="layouts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="19.Sandbox" type="b2602c69:ProjectViewProjectNode" />
+              <item name="19.Sandbox" type="462c0819:PsiDirectoryNode" />
+              <item name="gatsbyTut" type="462c0819:PsiDirectoryNode" />
+              <item name="example-site" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -219,11 +227,12 @@
       <workItem from="1531345757077" duration="1331000" />
       <workItem from="1531710820284" duration="3000" />
       <workItem from="1531720833769" duration="1386000" />
+      <workItem from="1532924956637" duration="457000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44574000" />
+    <option name="totallyTimeSpent" value="45031000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -235,8 +244,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="202" y="22" width="1238" height="795" extended-state="0" />
-    <editor active="true" />
+    <frame x="-167" y="-998" width="1238" height="795" extended-state="0" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.19884963" />
       <window_info anchor="bottom" id="TODO" order="9" weight="0.3290653" />
@@ -269,6 +277,20 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/2)tenMinuteVolatility/tenMinVolatility.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="42" column="12" selection-start-line="42" selection-start-column="12" selection-end-line="42" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2)tenMinuteVolatility/tenMinVolpt2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="33" column="43" selection-start-line="33" selection-start-column="43" selection-end-line="33" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/2)tenMinuteVolatility/tenMinVolatility.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -436,9 +458,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-693">
           <caret line="30" column="5" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -449,17 +468,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/2)tenMinuteVolatility/tenMinVolpt2.js">
+    <entry file="file://$PROJECT_DIR$/2)tenMinuteVolatility/tenMinVolatility.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="33" column="43" selection-start-line="33" selection-start-column="43" selection-end-line="33" selection-end-column="43" />
+        <state relative-caret-position="292">
+          <caret line="36" column="10" lean-forward="true" selection-start-line="36" selection-start-column="10" selection-end-line="36" selection-end-column="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/2)tenMinuteVolatility/tenMinVolatility.js">
+    <entry file="file://$PROJECT_DIR$/2)tenMinuteVolatility/tenMinVolpt2.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="42" column="12" selection-start-line="42" selection-start-column="12" selection-end-line="42" selection-end-column="12" />
+        <state relative-caret-position="382">
+          <caret line="33" column="43" selection-start-line="33" selection-start-column="43" selection-end-line="33" selection-end-column="43" />
         </state>
       </provider>
     </entry>
