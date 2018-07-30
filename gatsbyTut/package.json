@@ -1,0 +1,14 @@
+{
+  "name": "gatsby_tutorial",
+  "version": "1.0.0",
+  "description": "gatsbydj",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "gatsby_react_js"
+  ],
+  "author": "ahmer_malik",
+  "license": "ISC"
+}
